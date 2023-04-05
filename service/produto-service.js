@@ -20,7 +20,36 @@ const listaProduto = () => {
     return promise*/
 }
 
+/*'POST*/
+const criaProduto = (imagem, nome, preco) => {
+    return fetch(`http://localhost:4000/produtos`, {
+        method:'POST',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({
+            imagem: imagem,
+            nome: nome,
+            preco: preco
+        })
+
+    })
+    .then(resposta => {
+        return resposta.body
+    })
+}
+
+const removeProduto = (id) => {
+    return fetch(`http://localhost:4000/produtos/${id}`, {
+        method: 'DELETE'
+    })
+}
+
 export const produtoService = {
-    listaProduto
+    listaProduto,
+    criaProduto,
+    removeProduto
 }
 /* produtoService.listaProduto */
+/* produtoService.criaProduto */
+/* produtoService.removeProduto */

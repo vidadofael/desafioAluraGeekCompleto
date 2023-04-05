@@ -1,0 +1,7 @@
+.lista__produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 5px solid black;
+    padding: 5rem;
+}

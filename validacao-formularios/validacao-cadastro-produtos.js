@@ -7,26 +7,20 @@ window.addEventListener('load', () => {
     formCadastro.addEventListener('submit', (event) => {
       event.preventDefault();
   
-      // Verifica se a URL é válida
       if (!isUrlValid(urlInput.value)) {
         showErrorMessage(urlInput, 'Insira uma URL válida');
         return;
       }
   
-      // Verifica se o nome é válido
       if (!isNomeValid(nomeInput.value)) {
         showErrorMessage(nomeInput, 'Insira um nome de produto válido');
         return;
       }
   
-      // Verifica se o preço é válido
       if (!isPrecoValid(precoInput.value)) {
         showErrorMessage(precoInput, 'Insira um valor válido ex: 1.99');
         return;
-      }
-  
-      // Se todos os campos estiverem válidos, redireciona para a página de sucesso
-      window.location.href = '../telas/sucesso-cadastro-produto.html';
+      }     
     });
   
     function isUrlValid(url) {
