@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset-normalize/normalize.css">
     <link rel="stylesheet" href="../css/reset-normalize/reset.css">
+
+    <link rel="stylesheet" href="../css/cadastro-produtos/form-cadastro/btn-cadastrar-produto.css">
+    <link rel="stylesheet" href="../css/cadastro-produtos/form-cadastro/form-cadastro.css">
+    <link rel="stylesheet" href="../css/cadastro-produtos/form-cadastro/input-span-cadastro.css">
+
     <title>Cadastrar Produtos | AluraGeek</title>
 </head>
 <body>
-    
+    <form class="form__cadastro">
+        <div class="input__spanCadastro">
+            <input type="text" name="url" required>
+            <span>URL do produto</span>
+        </div>
+        <div class="input__spanCadastro">
+            <input type="text" name="nome" required>
+            <span>Nome do produto</span>
+        </div>
+        <div class="input__spanCadastro">
+            <input type="number" name="preco" step="0.01" required>
+            <span>Preço unitário</span>
+        </div> 
+        <button class="btn__cadastroProduto" type="submit">Cadastrar Produto</button>       
+    </form>
 </body>
-</html>
+<script type="module" src="../validacao-formularios/validacao-cadastro-produtos.js"></script>
+</html> 
