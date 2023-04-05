@@ -9,18 +9,19 @@
 <body>
     <form class="editar__produto" data-form-editar>
         <div>
-            <input type="text" required>
+            <input type="text" required data-img>
             <span>URL</span>
         </div>
         <div>
-            <input type="text" required>
+            <input type="text" required data-name>
             <span>Nome do Produto</span>
         </div>
         <div>
-            <input type="number" required>
+            <input type="number" step="0.01" required data-price>
             <span>Preço do Produto</span>
         </div>
         <button class="btn__concluirEdicao">Concluir edição</button>
     </form>
 </body>
+<script type="module" src="../controller/atualiza-controller.js"></script>
 </html>

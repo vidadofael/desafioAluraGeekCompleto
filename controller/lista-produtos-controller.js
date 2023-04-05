@@ -5,9 +5,9 @@ const criaNovaDivProduto = (imagem, nome, preco, id) => {
     linhaNovoProduto.classList.add('produto-novo');
     linhaNovoProduto.setAttribute('data-div', 'valor-comum-para-todas-as-divs');
     const conteudo = `
-            <img class="img__produto" src="${imagem}" alt="imagem do produto">
-            <p class="nome__produto">${nome}</p>
-            <p class="preco__produto">R$ ${preco}</p>
+            <img class="img__produto" src="${imagem}" alt="imagem do produto" data-imagem>
+            <p class="nome__produto" data-nome>${nome}</p>
+            <p class="preco__produto" data-preco>R$ ${preco}</p>
             <a href="../telas/mais-detalhes-produtos.html">Ver mais</a>
             <div class="botoes__gestao">
                 <div id="imagemExcluir" class="btn__excluir">
@@ -29,13 +29,13 @@ const criaNovaDivProduto = (imagem, nome, preco, id) => {
 
 const sessao = document.querySelector('[data-section]') /*data-tabela*/
 
-sessao.addEventListener('click', (evento) => {
+sessao.addEventListener('click', async(evento) => {
     let ehBotaoDeletar = evento.target.className === 'img__btn-excluir';
     if (ehBotaoDeletar) {
       const linhaNovoProduto = evento.target.closest('[data-id]');
       let id = linhaNovoProduto.dataset.id;
       if (confirm("Tem certeza que deseja excluir este produto?")) {
-        produtoService.removeProduto(id);
+        await produtoService.removeProduto(id);
       } else {
         console.log("Exclusão cancelada pelo usuário");
       }

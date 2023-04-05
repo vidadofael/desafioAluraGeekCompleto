@@ -45,11 +45,39 @@ const removeProduto = (id) => {
     })
 }
 
+const detalhaProduto = (id) => {
+    return fetch(`http://localhost:4000/produtos/${id}`)
+    .then(resposta => {
+        return resposta.json()
+    })
+}
+
+const atualizaProduto = (id, imagem, nome, preco) => {
+    return fetch(`http://localhost:4000/produtos/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify({
+            imagem: imagem,
+            nome: nome,
+            preco: preco
+        })
+    })
+    .then(resposta => {
+        return resposta.json()
+    })
+}
+
 export const produtoService = {
     listaProduto,
     criaProduto,
-    removeProduto
+    removeProduto,
+    detalhaProduto,
+    atualizaProduto
 }
 /* produtoService.listaProduto */
 /* produtoService.criaProduto */
 /* produtoService.removeProduto */
+/* produtoService.detalhaProduto */
+/* produtoService.atualizaProduto */
