@@ -4,7 +4,13 @@
         "id": 1,
         "nome": "Produto de teste",
         "preco": 10.99,
-        "imagem": "https://www.example.com/images/produto-de-teste.jpg"
+        "imagem": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtpk_-JeFzBWgxWSJCNryR3BBhzemqTl4d-rJIHSbFEAqKCW45cdQnhwcqYkT4DNGdz7joMZ-RyuS48ErFq1Gia1gcKDjnqjf_JPloAoG6Lbic9Tj6d6RK&usqp=CAE"
+      },
+      {
+        "id": 2,
+        "nome": "Produto de teste",
+        "preco": 10.99,
+        "imagem": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRtpk_-JeFzBWgxWSJCNryR3BBhzemqTl4d-rJIHSbFEAqKCW45cdQnhwcqYkT4DNGdz7joMZ-RyuS48ErFq1Gia1gcKDjnqjf_JPloAoG6Lbic9Tj6d6RK&usqp=CAE"
       }
     ]
   }
