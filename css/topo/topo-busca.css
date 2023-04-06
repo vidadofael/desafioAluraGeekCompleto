@@ -1,4 +1,32 @@
-.topo__busca {
+.topo__busca{
+    
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 100px;
+    width: 750%;
+    padding: .3rem;
+    margin-left: 10px;
+}
+.topo__busca input {
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 12px;
+    background-color: #e5e5e5;
+    border: none;
+}
+
+
+@media screen and (min-width: 0) {
+    .topo__busca input {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .topo__busca input {
+        display: block;
+    }
 }

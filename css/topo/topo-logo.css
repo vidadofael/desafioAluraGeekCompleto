@@ -1,4 +1,4 @@
 .topo__logo {
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
 }

@@ -1,6 +1,27 @@
 .topo {
-    border: 1px solid red;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 0) {
+    .topo {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .topo {
+        padding: 3rem;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .topo {
+        padding: 1rem 5rem 1rem 5rem;
+    }
 }

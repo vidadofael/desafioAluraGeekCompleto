@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/topo/topo-link-login.css">
     <link rel="stylesheet" href="./css/topo/topo-logo.css">
     <link rel="stylesheet" href="./css/topo/topo.css">
+    <link rel="stylesheet" href="./css/topo/topo-logo-busca.css">
     
 
     <title>Home | AluraGeek</title>
@@ -23,20 +24,18 @@
 </head>
 <body>
     <section class="topo">
-        <div class="topo__logo">
-            <img src="./assets/AluraGeek-nome-logo.png" alt="nome AluraGeek">
-            <img src="./assets/AluraGeek-nome-logo2.png" alt="nome AluraGeek">
+        <div class="topo__logoBusca">
+            <div class="topo__logo">
+                <img class="joystick" src="./assets/joystick.png" alt="">
+                <img class="nome__alura" src="./assets/AluraGeek-nome-logo.png" alt="nome AluraGeek">
+                <img  class="nome__geek" src="./assets/AluraGeek-nome-logo2.png" alt="nome AluraGeek">
+            </div>
+            <div class="topo__busca">
+                <input type="text" placeholder="O que deseja encontrar?">
+                <img src="./assets/lupa.png" alt="lupa para procurar item">
+            </div>
         </div>
-        <div class="topo__busca">
-            <input type="text" placeholder="O que deseja encontrar?">
-            <img src="./assets/lupa.png" alt="lupa para procurar item">
-            <ul class="topo__lista">
-                <li class="topo__listaItens">Home</li>
-                <li class="topo__listaItens">Benefícios</li>
-                <li class="topo__listaItens">Club-Alura</li>
-                <li class="topo__listaItens">Cadastro</li>
-            </ul>
-        </div>
+        
         <a class="topo__linkLogin" href="./telas/login.html">Login</a>
     </section>
 </body> 
