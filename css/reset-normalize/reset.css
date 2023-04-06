@@ -25,3 +25,7 @@ p {
 a {
     font-size: 14px;
 }
+
+:root {
+    --azul: #2A7AE4; /* azul */
+  }

@@ -1,0 +1,17 @@
+https://vidadofael.github.io/desafioAluraGeekCompleto/index.html
+
+
+
+
+
+@media screen and (min-width: 0) {
+    
+}
+
+@media screen and (min-width: 0) {
+    
+}
+
+@media screen and (min-width: 0) {
+    
+}
