@@ -1,32 +1,26 @@
-.topo__busca{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e5e5e5;
-    border: none;
-    border-radius: 100px;
-    width: 750%;
-    padding: .3rem;
-    margin-left: 10px;
-}
 .topo__busca input {
-    margin-left: 10px;
-    margin-right: 15px;
-    font-size: 12px;
-    background-color: #e5e5e5;
+    border-radius: 150px;
     border: none;
+    outline: none;
+    background-color: #e5e5e5;
+    padding: .5rem;
+    width: 290px;
 }
-
 
 @media screen and (min-width: 0) {
     .topo__busca input {
-        display: none;
+        width: 180px;
     }
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 525px) {
     .topo__busca input {
-        display: block;
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 772px) {
+    .topo__busca input {
+        width: 290px;
     }
 }
