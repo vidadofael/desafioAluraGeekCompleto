@@ -39,6 +39,7 @@
     align-items: center;
     padding: .5rem;
     transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
 .banner__itensLista img:hover {
@@ -47,12 +48,18 @@
     
 }
 
-.banner__itensLista p {
+.banner__itensLista a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 .banner__itensLista:hover {
     color: var(--azul);
-    height: 150px; 
+    
 }
 
 
@@ -64,12 +71,12 @@
 
 @media screen and (min-width: 386px) {
     .banner {
-        padding: 2.5rem; 
+        padding: 1.5rem; 
     }
 }
 
 @media screen and (min-width: 772px) {
     .banner {
-        padding: 4rem; 
+        padding: 2rem; 
     }
 }

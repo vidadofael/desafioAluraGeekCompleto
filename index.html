@@ -20,6 +20,10 @@
 
     <link rel="stylesheet" href="./css/banner/banner-promo.css">
     <link rel="stylesheet" href="./css/banner/banner.css">
+
+    <link rel="stylesheet" href="./css/sessao-produtos-venda/produtos.css">
+
+    <link rel="stylesheet" href="./css/contato/contato.css">
     
 
     <title>Home | AluraGeek</title>
@@ -34,7 +38,7 @@
                 <img  class="nome__geek" src="./assets/AluraGeek-nome-logo2.png" alt="nome AluraGeek">
             </div>
             <div class="topo__busca">
-                <input type="text" placeholder="O que deseja encontrar?">
+                <input type="text" id="searchInput" placeholder="O que deseja encontrar?">
             </div>
         </div>
         <a class="topo__linkLogin" href="./telas/login.html">Login</a>
@@ -45,27 +49,27 @@
         <ul class="banner__lista">
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/Marvel-Entertainment-Logo.jpg" alt="">
-                <p>Marvel</p>
+                <a href="#marvel__id">Marvel</a>
             </li>
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/star-wars-logo-news.jpg" alt="">
-                <p>Star Wars</p>
+                <a href="#sw__id">Star Wars</a>
             </li>
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/dc.png" alt="">  
-                <p>DC Comics</p>  
+                <a href="#dc__id">DC Comics</a>  
             </li>
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/simpsons.jpg" alt="">
-                <p>Simpsons</p>
+                <a href="#simps">Simpsons</a>
             </li>
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/vingadores-guerra-infinita.webp" alt="">
-                <p>Colecionáveis</p>
+                <a href="#coleciona">Colecionáveis</a>
             </li>
             <li class="banner__itensLista">
                 <img src="./assets/logos__banner/consoles.jpg" alt="">
-                <p>Consoles</p>
+                <a href="#console">Consoles</a>
             </li>
         </ul>
         <div class="banner__promo">
@@ -77,70 +81,473 @@
 
     <section class="sessao__produtos">
         <section class="sessao__itens">
-            <div>
-                <h1>Star Wars</h1>
-                <a href="Ver tudo"><img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            <div class="sessao__titulo" id="marvel__id">
+                <h1>Marvel</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
             </div>
 
-            <div class="produtos">
-                <div>
+            <ul class="produtos" id="itemList marvel__id">
+                <li class="produto__item">
                     <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
-                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
-                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
-                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
-                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
-                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
+                </li>
     
-                <div class="produto__item">
+                <li class="produto__item">
                     <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
                     <!--restante dos itens-->
                     <h3>Brinquedo</h3>
                     <p>R$ 19.99</p>
                     <a href="#vermais">mais detalhes</a>
-                </div>
-            </div>
+                </li>
+            </ul>
             
         </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo" id="sw__id">
+                <h1>Star Wars</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo" id="dc__id">
+                <h1>DC Comics</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo" id="simps">
+                <h1>Simpsons</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo" id="coleciona">
+                <h1>Colecionáveis</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo" id="console">
+                <h1>Consoles</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-consoles/xbox.jpg" alt="">
+                    <!--restante dos itens-->
+                    <h3>XBOX Serie X</h3>
+                    <p>R$ 4799.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-consoles/PS5.jpg" alt="">
+                    <!--restante dos itens-->
+                    <h3>PS-5 Sony</h3>
+                    <p>R$ 4999.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-consoles/switch.jpg" alt="">
+                    <!--restante dos itens-->
+                    <h3>Switch 32GB</h3>
+                    <p>R$ 2499.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-consoles/SWITCH OLED.jpg" alt="">
+                    <!--restante dos itens-->
+                    <h3>Switch Oled</h3>
+                    <p>R$ 2599.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-consoles/xboxss.jpg" alt="">
+                    <!--restante dos itens-->
+                    <h3>XBOX S 1TB</h3>
+                    <p>R$ 1999.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="sessao__itens">
+            <div class="sessao__titulo">
+                <h1>Outras Categorias</h1>
+                <a href="#">Ver mais<img src="./assets/seta_ver-tudo.png" alt="Ver todos os produtos"></a>
+            </div>
+
+            <ul class="produtos" id="itemList">
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-2.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-3.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-4.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-6.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-7.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+    
+                <li class="produto__item">
+                    <img src="./assets/imagens-produtos/itens-loja-starwars/item-01.png" alt="">
+                    <!--restante dos itens-->
+                    <h3>Brinquedo</h3>
+                    <p>R$ 19.99</p>
+                    <a href="#vermais">mais detalhes</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <section class="contato">
+        <div class="contato__img">
+            <img src="./assets/joystick.png" alt="logo alura geek">
+            <img src="./assets/AluraGeek-nome-logo.png" alt="logo alura geek">
+            <img src="./assets/AluraGeek-nome-logo2.png" alt="logo alura geek">
+        </div>
+        <ul class="lista__institucional">
+            <li>Quem Somos</li>
+            <li>Política de Privacidade</li>
+            <li>Programa Club-AluraGeek</li>
+            <li>Nossas Lojas</li>
+            <li>Quero ser Franqueado</li>
+            <li>Anuncie Aqui</li>
+        </ul>
+        <form class="form__contato" action="">
+            <h3>Fale Conosco</h3>
+            <input type="text" placeholder="Nome" required>
+            <span>Seu Nome</span>
+            <textarea name="textarea" id="mensagem" cols="30" rows="10" required></textarea>
+            <span>Digite sua Mensagem</span>
+            <button class="btn__enviarMensagem">Enviar mensagem</button>
+        </form>
     </section>
 </body> 
 </html>

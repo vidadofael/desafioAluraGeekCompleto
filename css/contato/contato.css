@@ -1,0 +1,33 @@
+.contato {
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: space-evenly;
+
+
+    
+}
+
+.contato__img {display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+
+}
+.contato__img img {
+    padding-bottom: .5rem;
+}
+
+.lista__institucional {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    
+
+}
+
+.form__contato {
+    display: flex;
+    flex-direction: column;
+}
