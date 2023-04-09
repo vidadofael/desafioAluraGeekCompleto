@@ -1,0 +1,13 @@
+.btn__enviarMensagem {
+    margin-top: 15px;
+    padding: .5rem;
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.btn__enviarMensagem:hover {
+    background-color: white;
+    color: var(--azul);
+}

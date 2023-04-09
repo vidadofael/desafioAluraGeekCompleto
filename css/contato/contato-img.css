@@ -1,0 +1,9 @@
+.contato__img {
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+}
+.contato__img img {
+    padding: .5rem;  
+}

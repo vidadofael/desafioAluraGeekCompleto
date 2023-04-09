@@ -1,0 +1,16 @@
+.lista__institucional {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.lista__institucional li {
+    cursor: pointer;
+    transition:  .2s ease-in-out;
+}
+.lista__institucional li:hover {
+    color: var(--azul);
+    font-weight: 700;
+}

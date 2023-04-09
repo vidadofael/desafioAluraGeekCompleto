@@ -1,0 +1,41 @@
+.form__contato {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form__contato input, textarea {
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    padding: .3rem;
+    resize: none;
+}
+
+
+.form__contatoSpanNome{
+    position: absolute;
+    top: 52px; /*22px*/
+    transition: .2s ease-in-out;
+    opacity: .5;
+    pointer-events: none;
+    
+}
+.form__contatoSpanMensagem {
+    position: absolute;
+    top: 105px; /*75px*/
+    transition: .2s ease-in-out;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.form__ipt input:focus ~ .form__contatoSpanNome,
+.form__ipt textarea:focus ~ .form__contatoSpanMensagem,
+.form__ipt input:valid ~ .form__contatoSpanNome,
+.form__ipt textarea:valid ~ .form__contatoSpanMensagem
+{
+    transform: translateY(-24px);
+    font-size: 14px;
+    opacity: 1;
+    font-weight: 700;
+}
