@@ -7,3 +7,15 @@
 .contato h3 {
     font-size: 20px;
 }
+
+@media screen and (min-width: 0) {
+    .contato {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .contato {
+        flex-direction: row;
+    }
+}
