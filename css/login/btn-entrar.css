@@ -1,0 +1,12 @@
+.btn__loginEntrar {
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    padding: .5rem;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+.btn__loginEntrar:hover {
+    background-color: white;
+    color: var(--azul);  
+}

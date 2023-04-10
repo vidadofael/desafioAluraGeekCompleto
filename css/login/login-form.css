@@ -1,0 +1,53 @@
+.login__form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login__form input {
+    width: 300px;
+    margin-bottom: 25px;
+    box-shadow: 2px 5px 25px rgb(180, 180, 180);
+    
+}
+
+
+.login__email {
+    position: relative;
+    display: flex;
+}
+.login__email input, .login__senha input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    
+}
+.login__email span {
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    transition: .2s ease-in-out;
+    opacity: .5;
+}
+
+.login__senha {
+    position: relative;
+    display: flex;
+}
+.login__senha span {
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    transition: .2s ease-in-out;
+    opacity: .5;
+}
+
+.login__email input:focus ~ span,
+.login__senha input:focus ~ span,
+.login__email input:valid ~ span,
+.login__senha input:valid ~ span
+{
+    transform: translateY(-38px);
+    opacity: 1;
+    font-weight: 700;
+}

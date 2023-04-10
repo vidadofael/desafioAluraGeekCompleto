@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="../css/banner/banner.css">
 
     <link rel="stylesheet" href="../css/login/login.css">
+    <link rel="stylesheet" href="../css/login/btn-entrar.css">
+    <link rel="stylesheet" href="../css/login/login-form.css">
+    <link rel="stylesheet" href="../css/login/login-titulo.css">
 
     <link rel="stylesheet" href="../css/contato/contato.css">
     <link rel="stylesheet" href="../css/contato/contato-img.css">
@@ -57,10 +60,17 @@
             Iniciar Sessão
         </h1>
         <form class="login__form">
-            <input type="email" required>
-            <span>Escreva seu email</span>
-            <input type="password" required>
-            <span>Escreva sua senha</span>
+            <div class="login__email">
+                <input type="email" required>
+                <span>Escreva seu email</span>
+            </div>
+            <div class="login__senha">
+                <input type="password" required>
+                <span>Escreva sua senha</span>
+            </div>
+            <button class="btn__loginEntrar">
+                Entrar
+            </button>
         </form>
     </section>
 
